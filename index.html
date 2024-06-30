@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COVID-19 Data Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <h1>COVID-19 Data Dashboard</h1>
+    <div class="data-container">
+      <div class="data-item">
+        <h2>Global Data</h2>
+        <p>Total Cases: <span id="total-cases"></span></p>
+        <p>Total Deaths: <span id="total-deaths"></span></p>
+        <p>Total Recoveries: <span id="total-recoveries"></span></p>
+      </div>
+    </div>
+    <div class="data-container">
+      <div class="data-item">
+        <h2>Country Data</h2>
+        <select id="country-select">
+          <!-- Options will be populated dynamically -->
+        </select>
+        <p>Total Cases: <span id="country-cases"></span></p>
+        <p>Total Deaths: <span id="country-deaths"></span></p>
+        <p>Total Recoveries: <span id="country-recoveries"></span></p>
+      </div>
+    </div>
+    <div class="data-container">
+      <div class="data-item">
+        <h2>Trends</h2>
+        <canvas id="trends-chart"></canvas>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
